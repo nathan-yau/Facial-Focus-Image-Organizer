@@ -7,7 +7,7 @@ from PyQt6.QtWidgets import QPushButton, QLabel
 
 class OperationPageWidgetsCreator(WidgetsCreator):
 
-    def __init__(self, navigator: PageNavigator):
+    def __init__(self, navigator: PageNavigator = None):
         super().__init__()
         self.navigator = navigator
         self._list_of_top_layout_widgets = []

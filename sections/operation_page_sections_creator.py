@@ -16,5 +16,5 @@ class OperationPageSectionsCreator(SectionsCreator):
 
     def create_sections(self, outer_layout, widget_creator):
         self._populate_section(outer_layout, widget_creator.get_top_layout_widgets, "top_layout")
-        self._populate_section(outer_layout, widget_creator.get_middle_layout_widgets, "middle_layout")
-        self._populate_section(outer_layout, widget_creator.get_bottom_layout_widgets, "bottom_layout")
+        # self._populate_section(outer_layout, widget_creator.get_middle_layout_widgets, "middle_layout")
+        # self._populate_section(outer_layout, widget_creator.get_bottom_layout_widgets, "bottom_layout")
