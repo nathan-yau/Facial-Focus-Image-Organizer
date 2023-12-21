@@ -13,9 +13,10 @@ from widgets.welcome_page_widgets_creator import WelcomePageWidgetsCreator
 
 def main():
     app = QApplication(sys.argv)
-    operation_page_info = ("User Interface", 500, 500, 400, 400)
+    operation_page_info = ("User Interface", 200, 200, 600, 400)
     next_page_navigator = ClassicPageNavigator(OperationPage, OperationPageWidgetsCreator(),
                                                OperationPageSectionsCreator(), operation_page_info)
+
     welcome_page_widget_creator = WelcomePageWidgetsCreator(next_page_navigator)
     welcome_page_section_creator = WelcomePageSectionsCreator()
     welcome_page_info = ("Facial Focus Image Organizer", 500, 500, 400, 400)

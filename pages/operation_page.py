@@ -1,5 +1,5 @@
 from PyQt6.QtGui import QIcon
-from PyQt6.QtWidgets import QMainWindow, QWidget, QVBoxLayout
+from PyQt6.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QHBoxLayout
 
 from sections.sections_creator import SectionsCreator
 from widgets.widgets_creator import WidgetsCreator
@@ -19,7 +19,7 @@ class OperationPage(QMainWindow):
         # Outer Widget
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
-        main_layout = QVBoxLayout()
+        main_layout = QHBoxLayout()
         section_creator.create_sections(main_layout, widget_creator)
 
         # Outer Widget Completion
