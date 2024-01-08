@@ -13,9 +13,11 @@ from widgets.welcome_page_widgets_creator import WelcomePageWidgetsCreator
 
 def main():
     app = QApplication(sys.argv)
-    operation_page_info = ("User Interface", 200, 200, 600, 400)
-    next_page_navigator = ClassicPageNavigator(OperationPage, OperationPageWidgetsCreator(),
-                                               OperationPageSectionsCreator(), operation_page_info)
+    operation_page_info = ("User Interface", 200, 200, 600, 350)
+    operation_widgets_creator = OperationPageWidgetsCreator()
+    operation_sections_creator = OperationPageSectionsCreator()
+    next_page_navigator = ClassicPageNavigator(OperationPage, operation_widgets_creator,
+                                               operation_sections_creator, operation_page_info)
 
     welcome_page_widget_creator = WelcomePageWidgetsCreator(next_page_navigator)
     welcome_page_section_creator = WelcomePageSectionsCreator()

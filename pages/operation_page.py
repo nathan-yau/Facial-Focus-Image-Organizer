@@ -19,7 +19,7 @@ class OperationPage(QMainWindow):
         # Outer Widget
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
-        main_layout = QHBoxLayout()
+        main_layout = QVBoxLayout()
         section_creator.create_sections(main_layout, widget_creator)
 
         # Outer Widget Completion
